@@ -1,2 +1,2 @@
 # Wedia
-Delegate your proprietary data labeling to our creative workforce and receive high-quality training data at scale.
+Outsource your proprietary data tagging tasks to our fleet of creative humans and get high-quality training data.
