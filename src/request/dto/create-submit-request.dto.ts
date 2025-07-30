@@ -20,6 +20,11 @@ export class CreateSubmitRequestDto {
   @IsNotEmpty()
   companyName: string;
 
+  @ApiProperty()
+  @IsString()
+  @IsNotEmpty()
+  email: string;
+
   @ApiProperty({ enum: DataType })
   @IsEnum(DataType)
   typeOfData: DataType;

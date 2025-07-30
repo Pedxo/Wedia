@@ -1,4 +1,10 @@
-import { IsNotEmpty, IsString, IsEnum, IsDateString, IsNumber } from 'class-validator';
+import {
+  IsNotEmpty,
+  IsString,
+  IsEnum,
+  IsDateString,
+  IsNumber,
+} from 'class-validator';
 import { ApiProperty } from '@nestjs/swagger';
 import { DataType } from '../schemas/submit-request.schema';
 
@@ -22,6 +28,11 @@ export class CreateBookDemoDto {
   @IsString()
   @IsNotEmpty()
   clientState: string;
+
+  @ApiProperty()
+  @IsString()
+  @IsNotEmpty()
+  clientEmail: string;
 
   @ApiProperty({ type: String, format: 'date' })
   @IsDateString()

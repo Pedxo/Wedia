@@ -19,6 +19,9 @@ export class BookDemo {
   clientState: string;
 
   @Prop({ required: true })
+  clientEmail: string;
+
+  @Prop({ required: true })
   date: string;
 
   @Prop({ required: true })
