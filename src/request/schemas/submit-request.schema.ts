@@ -19,6 +19,9 @@ export class SubmitRequest {
   @Prop({ required: true })
   companyName: string;
 
+  @Prop({ required: true })
+  email: string;
+
   @Prop({ required: true, enum: DataType })
   typeOfData: DataType;
 
